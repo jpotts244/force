@@ -75,20 +75,12 @@ export const clientCommonConfig = {
       },
     }),
     // Remove moment.js localization files
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+    new webpack.IgnorePlugin({ resourceRegExp: /^\.\/locale$/ }),
+    new webpack.IgnorePlugin({ resourceRegExp: /moment$/ }),
     // Remove server-only modules from client bundles
-    ...[
-      // Remove server side of relay network layer.
-      new webpack.IgnorePlugin(
-        /^react-relay-network-modern-ssr\/node8\/server/
-      ),
-      // No matter what, we don't want the graphql-js package in client
-      // bundles. This /may/ lead to a broken build when e.g. a reaction
-      // module that's used on the client side imports something from
-      // graphql-js, but that's better than silently including this.
-      new webpack.IgnorePlugin(/^graphql(\/.*)?$/),
-    ],
-    new webpack.NamedModulesPlugin(),
+    // TODO: Why would these end up in the client bundle?
+    new webpack.IgnorePlugin({ resourceRegExp: /^react-relay-network-modern-ssr\/node8\/server/ }),
+    new webpack.IgnorePlugin({ resourceRegExp: /^graphql(\/.*)?$/ }),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
