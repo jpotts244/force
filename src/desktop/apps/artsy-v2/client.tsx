@@ -9,7 +9,7 @@ import { loadableReady } from "@loadable/component"
 import { getPageTypeFromClient } from "lib/getPageType"
 import { OwnerType } from "@artsy/cohesion"
 
-const mediator = require("desktop/lib/mediator.coffee")
+import { mediator } from "desktop/lib/mediator"
 
 buildClientApp({
   routes: getAppRoutes(),

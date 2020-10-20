@@ -2,7 +2,7 @@ import $ from "jquery"
 import { data as sd } from "sharify"
 import { onAnalyticsReady, trackEvent } from "desktop/analytics/helpers"
 const analyticsHooks = require("../lib/analytics_hooks.coffee")
-const mediator = require("../lib/mediator.coffee")
+import { mediator } from "../lib/mediator"
 const setupSplitTests = require("../components/split_test/setup.coffee")
 window._ = require("underscore")
 window.Cookies = require("cookies-js")

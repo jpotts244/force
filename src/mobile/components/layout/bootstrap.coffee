@@ -21,7 +21,7 @@ CurrentUser = require '../../models/current_user.coffee'
 Sentry = require("@sentry/browser")
 globalReactModules = require('../../../desktop/lib/global_react_modules.tsx')
 hydrateStitch = require('@artsy/stitch/dist/internal/hydrate').hydrate
-mediator = require('../../../desktop/lib/mediator.coffee')
+{ mediator } = require('../../../desktop/lib/mediator')
 syncAuth = require('../../../lib/syncAuth.ts').default
 { logoutEventHandler } = require('../../../desktop/lib/global_client_setup.tsx')
 

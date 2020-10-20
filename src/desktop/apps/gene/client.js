@@ -20,7 +20,7 @@ const {
 } = require("../../components/follow_button/index.coffee")
 const ShareView = require("../../components/share/view.coffee")
 const blurb = require("../../components/gradient_blurb/index.coffee")
-const mediator = require("desktop/lib/mediator.coffee")
+import { mediator } from "desktop/lib/mediator"
 
 imagesLoaded.makeJQueryPlugin($)
 

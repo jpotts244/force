@@ -1,6 +1,6 @@
 _ = require 'underscore'
 Backbone = require 'backbone'
-mediator = require '../../../lib/mediator.coffee'
+{ mediator } = require '../../../lib/mediator'
 { openAuthModal } = require '../../../lib/openAuthModal'
 { ModalType } = require "../../../../v2/Components/Authentication/Types"
 { setupRail, shouldShowRVARail, reInitRVARail } = require '../../recently_viewed_artworks/index.coffee'

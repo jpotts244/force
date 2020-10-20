@@ -23,10 +23,10 @@ jest.mock("desktop/components/cookies/index.coffee", () => ({
 const mockCookies = require("desktop/components/cookies/index.coffee")
   .get as jest.Mock
 
-jest.mock("desktop/lib/mediator.coffee", () => ({
+jest.mock("desktop/lib/mediator", () => ({
   trigger: jest.fn(),
 }))
-const mockMediator = require("desktop/lib/mediator.coffee").trigger as jest.Mock
+const mockMediator = require("desktop/lib/mediator").trigger as jest.Mock
 
 jest.mock("desktop/lib/openAuthModal", () => ({
   handleScrollingAuthModal: jest.fn(),

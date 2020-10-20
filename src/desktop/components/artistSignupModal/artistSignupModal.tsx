@@ -4,7 +4,7 @@ import { handleScrollingAuthModal } from "desktop/lib/openAuthModal"
 import { ContextModule, Intent } from "@artsy/cohesion"
 
 const Cookies = require("desktop/components/cookies/index.coffee")
-const mediator = require("desktop/lib/mediator.coffee")
+import { mediator } from "desktop/lib/mediator"
 const metaphysics2 = require("lib/metaphysics2.coffee")
 
 export const query = `

@@ -1,5 +1,5 @@
 import { test } from "../DOM"
-import mediator from "desktop/lib/mediator.coffee"
+import { mediator } from "desktop/lib/mediator"
 
 const { DOM } = test
 
@@ -7,7 +7,7 @@ jest.mock("jquery", x => () => ({
   foo: "bar",
 }))
 
-jest.mock("desktop/lib/mediator.coffee", x => ({
+jest.mock("desktop/lib/mediator", x => ({
   trigger: jest.fn(),
 }))
 

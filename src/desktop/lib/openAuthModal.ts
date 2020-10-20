@@ -1,7 +1,7 @@
 import { ModalOptions, ModalType } from "v2/Components/Authentication/Types"
 import { data as sd } from "sharify"
 
-const mediator = require("desktop/lib/mediator.coffee")
+import { mediator } from "desktop/lib/mediator"
 
 /**
  * Open authentication modal via 'click' trigger

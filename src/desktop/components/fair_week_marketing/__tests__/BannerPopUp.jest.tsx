@@ -14,10 +14,10 @@ jest.mock("sharify", () => ({
   },
 }))
 
-jest.mock("desktop/lib/mediator.coffee", () => ({
+jest.mock("desktop/lib/mediator", () => ({
   trigger: jest.fn(),
 }))
-const mediator = require("desktop/lib/mediator.coffee").trigger as jest.Mock
+const mediator = require("desktop/lib/mediator").trigger as jest.Mock
 
 describe("BannerPopUp", () => {
   let props = {

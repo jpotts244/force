@@ -11,8 +11,8 @@ import { initModalManager } from "desktop/apps/authentication/client/index"
 import { Components } from "@artsy/stitch/dist/internal/types"
 import { omit } from "lodash"
 import syncAuth from "lib/syncAuth"
+import { mediator } from "./mediator"
 
-const mediator = require("./mediator.coffee")
 const FlashMessage = require("../components/flash/index.coffee")
 const templateModules = require("./template_modules.coffee")
 const listenForInvert = require("../components/eggs/invert/index.coffee")

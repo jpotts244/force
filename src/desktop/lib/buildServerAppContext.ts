@@ -1,5 +1,4 @@
-// @ts-ignore
-import mediator from "desktop/lib/mediator.coffee"
+import { mediator } from "desktop/lib/mediator"
 import { Request, Response } from "express"
 
 /**

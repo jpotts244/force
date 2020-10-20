@@ -4,7 +4,7 @@ import { SystemContextProvider } from "@artsy/reaction/dist/Artsy"
 import { InfiniteScrollNewsArticle } from "desktop/apps/article/components/InfiniteScrollNewsArticle"
 import { data as sd } from "sharify"
 
-const mediator = require("desktop/lib/mediator.coffee")
+import { mediator } from "desktop/lib/mediator"
 
 export interface Props {
   articles: ArticleData[]

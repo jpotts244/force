@@ -8,7 +8,7 @@ const benv = require("benv")
 const rewire = require("rewire")
 const sinon = require("sinon")
 const Backbone = require("backbone")
-const mediator = require("../../../../lib/mediator.coffee")
+const { mediator } = require("../../../../lib/mediator")
 
 describe("AboutView", function () {
   before(done =>

@@ -12,13 +12,12 @@ jest.mock("desktop/components/cookies/index.coffee", () => ({
   get: jest.fn(),
   set: jest.fn(),
 }))
-jest.mock("desktop/lib/mediator.coffee", () => ({
+jest.mock("desktop/lib/mediator", () => ({
   trigger: jest.fn(),
   on: jest.fn(),
 }))
-const mediatorTrigger = require("desktop/lib/mediator.coffee")
-  .trigger as jest.Mock
-const mediatorOn = require("desktop/lib/mediator.coffee").on as jest.Mock
+const mediatorTrigger = require("desktop/lib/mediator").trigger as jest.Mock
+const mediatorOn = require("desktop/lib/mediator").on as jest.Mock
 const qsMock = require("querystring").parse as jest.Mock
 const CookiesGetMock = require("desktop/components/cookies/index.coffee")
   .get as jest.Mock

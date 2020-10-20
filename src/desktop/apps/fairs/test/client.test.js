@@ -16,7 +16,7 @@ const { FairsView } = benv.requireWithJadeify(
 )
 const ViewHelpers = require("../helpers/view_helpers.coffee")
 const moment = require("moment")
-const mediator = require("../../../lib/mediator.coffee")
+const { mediator } = require("../../../lib/mediator")
 
 describe("FairsView", function () {
   before(done =>

@@ -8,7 +8,7 @@ import { SystemContextProvider } from "v2/Artsy"
 
 const Tag = require("../../models/tag.coffee")
 const CurrentUser = require("../../models/current_user.coffee")
-const mediator = require("desktop/lib/mediator.coffee")
+import { mediator } from "desktop/lib/mediator"
 
 // Update URL with current filters/mode/sort, for ease of sharing.
 const onStateChange = ({ filters, sort }) => {

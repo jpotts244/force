@@ -1,6 +1,6 @@
 Backbone = require 'backbone'
 metaphysics = require '../../../../../lib/metaphysics2.coffee'
-mediator = require '../../../../lib/mediator.coffee'
+{ mediator } = require '../../../../lib/mediator'
 tabQuery = require './query.coffee'
 artistSuggestionQuery = require './artist_suggestion_query.coffee'
 initCarousel = require '../../../../components/merry_go_round/horizontal_nav_mgr.coffee'

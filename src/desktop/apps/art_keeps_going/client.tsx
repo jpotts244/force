@@ -5,7 +5,7 @@ import React from "react"
 import ReactDOM from "react-dom"
 import { loadableReady } from "@loadable/component"
 
-const mediator = require("desktop/lib/mediator.coffee")
+import { mediator } from "desktop/lib/mediator"
 
 buildClientApp({
   routes: routes,

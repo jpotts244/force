@@ -5,7 +5,7 @@ import { ModalManager } from "v2/Components/Authentication/Desktop/ModalManager"
 import { ModalContainer } from "../ModalContainer"
 import { ContextModule, Intent } from "@artsy/cohesion"
 import { ModalType } from "v2/Components/Authentication/Types"
-const mediator = require("../../../../lib/mediator.coffee")
+const { mediator } = require("../../../../lib/mediator")
 
 jest.mock("sharify")
 jest.mock("cookies-js", () => ({

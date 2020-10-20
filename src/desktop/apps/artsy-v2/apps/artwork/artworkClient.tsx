@@ -3,6 +3,7 @@ import { recordArtworkView } from "lib/components/record_artwork_view"
 import { data as sd } from "sharify"
 import { getPageTypeFromClient } from "lib/getPageType"
 import { OwnerType } from "@artsy/cohesion"
+import { mediator } from "desktop/lib/mediator"
 
 export const artworkClient = () => {
   const User = require("desktop/models/user.coffee")
@@ -14,7 +15,7 @@ export const artworkClient = () => {
   const openMultiPageModal = require("desktop/components/multi_page_modal/index.coffee")
 
   const $ = require("jquery")
-  const mediator = require("desktop/lib/mediator.coffee")
+
   const { pageType, pageSlug } = getPageTypeFromClient()
 
   if (pageType === OwnerType.artwork) {

@@ -12,7 +12,9 @@ import {
 } from "@artsy/cohesion"
 import { omit } from "lodash"
 
-const mediator = require("desktop/lib/mediator.coffee")
+import { mediator } from "desktop/lib/mediator"
+
+// TODO: Needs removed to prevent importing backbone
 const LoggedOutUser = require("desktop/models/logged_out_user.coffee")
 
 export const handleSubmit = (
